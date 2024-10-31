@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Oct 17 20:55:51 2024
+
+@author: Alexander Rios
+"""
+
 import requests
 from bs4 import BeautifulSoup
 import urllib.parse
@@ -67,7 +74,7 @@ except Exception as e:
     print(f"Error al establecer conexión: {e}")
 
 #idS = sys.argv[1]
-idS = 1766
+idS = 1774
 time.sleep(5)
 try:
     def dataframeSP(lista):
@@ -1004,7 +1011,7 @@ if identidad == 'En nombre propio':
         item_id = idS 
         list_obj = ctx.web.lists.get_by_title(list_name)
         item = list_obj.get_item_by_id(item_id)
-        item.set_property(column_name, 'Radicado en la SIPI')
+        item.set_property(column_name, 'Sin revisar por el robot')
         item.update()
         ctx.execute_query() 
        
@@ -1153,7 +1160,7 @@ if identidad == 'En nombre propio':
         item_id = idS 
         list_obj = ctx.web.lists.get_by_title(list_name)
         item = list_obj.get_item_by_id(item_id)
-        item.set_property(column_name, 'Radicado en la SIPI')
+        item.set_property(column_name, 'Sin revisar por el robot')
         item.update()
         ctx.execute_query() 
         
@@ -1403,7 +1410,7 @@ elif identidad == 'Como apoderado':
         item_id = idS 
         list_obj = ctx.web.lists.get_by_title(list_name)
         item = list_obj.get_item_by_id(item_id)
-        item.set_property(column_name, 'Radicado en la SIPI')
+        item.set_property(column_name, 'Sin revisar por el robot')
         item.update()
         ctx.execute_query() 
         
@@ -1695,7 +1702,7 @@ elif identidad == 'Como apoderado':
         item_id = idS 
         list_obj = ctx.web.lists.get_by_title(list_name)
         item = list_obj.get_item_by_id(item_id)
-        item.set_property(column_name, 'Radicado en la SIPI')
+        item.set_property(column_name, 'Sin revisar por el robot')
         item.update()
         ctx.execute_query() 
         
